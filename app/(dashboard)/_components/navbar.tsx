@@ -13,4 +13,3 @@ export const Navbar = () => {
     );
 };
 
-// completed the time till 1:10:25
