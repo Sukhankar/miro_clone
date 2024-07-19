@@ -18,6 +18,7 @@ const font = Poppins({
 export const OrgSidebar = () => {
     const searchParams = useSearchParams();
     const favorites = searchParams.get("favorites");
+    
 
     return(
         <div className="hidden lg:flex flex-col space-y-6 w-[206px] 
@@ -39,25 +40,25 @@ export const OrgSidebar = () => {
                 </div>
             </Link>
             <OrganizationSwitcher 
-            hidePersonal
-            appearance={{
-                elements:{
-                    rootBox:{
-                        display:"flex",
-                        justifyContent:"center",
-                        alignItems:"center",
-                        width:"100%",
-                    },
-                    organizationSwitcherTrigger:{
-                        padding:"6px",
-                        width:"100%",
-                        borderRadius:"8px",
-                        border:"1px solid #E5E7EB",
-                        justifyContent:"space-between",
-                        backgroundColor:"white",
+                hidePersonal
+                appearance={{
+                    elements:{
+                        rootBox:{
+                            display:"flex",
+                            justifyContent:"center",
+                            alignItems:"center",
+                            width:"100%",
+                        },
+                        organizationSwitcherTrigger:{
+                            padding:"6px",
+                            width:"100%",
+                            borderRadius:"8px",
+                            border:"1px solid #E5E7EB",
+                            justifyContent:"space-between",
+                            backgroundColor:"white",
+                        }
                     }
-                }
-            }}
+                }}
             />
             <div className="space-y-1 w-full">
                 <Button

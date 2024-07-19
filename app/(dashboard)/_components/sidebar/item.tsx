@@ -49,5 +49,3 @@ export const Item = ({
     )
 }
 
-
-// completed till time 1:35:00
